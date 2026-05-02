@@ -1,153 +1,374 @@
-<html>
-
+<!doctype html>
+<html lang="zh-CN">
 <head>
-<meta http-equiv=Content-Type content="text/html; charset=gb2312">
-<meta name=Generator content="Microsoft Word 15 (filtered)">
-<title>影评_给阿嬷的情书</title>
-<style>
-<!--
- /* Font Definitions */
- @font-face
-	{font-family:"Cambria Math";
-	panose-1:2 4 5 3 5 4 6 3 2 4;}
-@font-face
-	{font-family:等线;
-	panose-1:2 1 6 0 3 1 1 1 1 1;}
-@font-face
-	{font-family:"等线 Light";
-	panose-1:2 1 6 0 3 1 1 1 1 1;}
-@font-face
-	{font-family:"\@等线 Light";}
-@font-face
-	{font-family:"\@等线";
-	panose-1:2 1 6 0 3 1 1 1 1 1;}
- /* Style Definitions */
- p.MsoNormal, li.MsoNormal, div.MsoNormal
-	{margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:8.0pt;
-	margin-left:0cm;
-	line-height:115%;
-	font-size:11.0pt;
-	font-family:等线;}
-p.MsoTitle, li.MsoTitle, div.MsoTitle
-	{mso-style-link:"标题 字符";
-	margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:4.0pt;
-	margin-left:0cm;
-	text-align:center;
-	font-size:28.0pt;
-	font-family:"等线 Light";
-	letter-spacing:-.5pt;}
-p.MsoTitleCxSpFirst, li.MsoTitleCxSpFirst, div.MsoTitleCxSpFirst
-	{mso-style-link:"标题 字符";
-	margin:0cm;
-	text-align:center;
-	font-size:28.0pt;
-	font-family:"等线 Light";
-	letter-spacing:-.5pt;}
-p.MsoTitleCxSpMiddle, li.MsoTitleCxSpMiddle, div.MsoTitleCxSpMiddle
-	{mso-style-link:"标题 字符";
-	margin:0cm;
-	text-align:center;
-	font-size:28.0pt;
-	font-family:"等线 Light";
-	letter-spacing:-.5pt;}
-p.MsoTitleCxSpLast, li.MsoTitleCxSpLast, div.MsoTitleCxSpLast
-	{mso-style-link:"标题 字符";
-	margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:4.0pt;
-	margin-left:0cm;
-	text-align:center;
-	font-size:28.0pt;
-	font-family:"等线 Light";
-	letter-spacing:-.5pt;}
-span.a
-	{mso-style-name:"标题 字符";
-	mso-style-link:标题;
-	font-family:"等线 Light";
-	letter-spacing:-.5pt;}
-.MsoChpDefault
-	{font-family:等线;}
-.MsoPapDefault
-	{margin-bottom:8.0pt;
-	line-height:115%;}
- /* Page Definitions */
- @page WordSection1
-	{size:595.3pt 841.9pt;
-	margin:72.0pt 90.0pt 72.0pt 90.0pt;
-	layout-grid:15.6pt;}
-div.WordSection1
-	{page:WordSection1;}
--->
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>一封写给故土与血脉的侨批</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #221712;
+      --ink-soft: #665449;
+      --paper: #f7efe2;
+      --paper-light: #fffaf2;
+      --paper-warm: #ead8bd;
+      --umber: #775139;
+      --tea: #8a6746;
+      --olive: #60715d;
+      --seal: #9b3f2f;
+      --line: rgba(95, 66, 44, 0.22);
+      --hairline: rgba(95, 66, 44, 0.13);
+      --shadow: 0 42px 110px rgba(46, 29, 17, 0.18);
+      --soft-shadow: 0 22px 58px rgba(46, 29, 17, 0.14);
+      --serif: "Iowan Old Style", "Palatino Linotype", "Noto Serif CJK SC", "Source Han Serif SC", "Songti SC", "STSong", "SimSun", serif;
+      --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+    }
 
+    * { box-sizing: border-box; }
+
+    html {
+      min-height: 100%;
+      background:
+        radial-gradient(circle at 8% 11%, rgba(155, 63, 47, 0.13), transparent 28rem),
+        radial-gradient(circle at 91% 9%, rgba(96, 113, 93, 0.15), transparent 27rem),
+        radial-gradient(circle at 66% 94%, rgba(188, 145, 91, 0.16), transparent 34rem),
+        linear-gradient(135deg, #fbf4e9 0%, #ead6bb 45%, #f8efe3 100%);
+    }
+
+    body {
+      margin: 0;
+      min-height: 100%;
+      color: var(--ink);
+      font-family: var(--serif);
+      text-rendering: geometricPrecision;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      overflow-x: hidden;
+    }
+
+    body::before,
+    body::after {
+      content: "";
+      position: fixed;
+      pointer-events: none;
+      z-index: 0;
+      opacity: 0.78;
+    }
+
+    body::before {
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(94, 67, 45, 0.045) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(94, 67, 45, 0.035) 1px, transparent 1px);
+      background-size: 44px 44px, 44px 44px;
+      mask-image: radial-gradient(circle at center, black, transparent 78%);
+    }
+
+    body::after {
+      width: 42vw;
+      height: 42vw;
+      right: -19vw;
+      top: 29vh;
+      border-radius: 999px;
+      background: radial-gradient(circle, rgba(96, 113, 93, 0.13), transparent 69%);
+      filter: blur(2px);
+    }
+
+    .page {
+      position: relative;
+      z-index: 1;
+      width: min(1180px, calc(100% - clamp(18px, 5vw, 72px)));
+      margin: 0 auto;
+      padding: clamp(28px, 6.4vw, 96px) 0;
+    }
+
+    .article-shell {
+      position: relative;
+      max-width: 930px;
+      margin: 0 auto;
+      padding: clamp(34px, 7vw, 92px) clamp(22px, 6.5vw, 92px) clamp(42px, 7vw, 98px);
+      border-radius: clamp(24px, 4.2vw, 44px);
+      background:
+        linear-gradient(180deg, rgba(255, 252, 246, 0.92), rgba(255, 248, 238, 0.86)),
+        radial-gradient(circle at 8% 3%, rgba(155, 63, 47, 0.08), transparent 19rem),
+        radial-gradient(circle at 95% 28%, rgba(96, 113, 93, 0.09), transparent 21rem);
+      border: 1px solid rgba(102, 72, 49, 0.20);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      isolation: isolate;
+    }
+
+    .article-shell::before {
+      content: "";
+      position: absolute;
+      inset: clamp(11px, 1.7vw, 20px);
+      border: 1px solid var(--hairline);
+      border-radius: clamp(17px, 3vw, 30px);
+      pointer-events: none;
+      z-index: -1;
+    }
+
+    .article-shell::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -2;
+      background:
+        linear-gradient(90deg, transparent 0 9%, rgba(126, 89, 57, 0.045) 9.12% 9.22%, transparent 9.34% 90.7%, rgba(126, 89, 57, 0.045) 90.82% 90.92%, transparent 91.04%),
+        repeating-linear-gradient(0deg, rgba(126, 89, 57, 0.018) 0 1px, transparent 1px 34px);
+    }
+
+    .hero {
+      position: relative;
+      display: grid;
+      place-items: center;
+      min-height: clamp(170px, 24vw, 270px);
+      margin: 0 0 clamp(18px, 4vw, 44px);
+      text-align: center;
+    }
+
+    .hero::before,
+    .hero::after {
+      content: "";
+      position: absolute;
+      pointer-events: none;
+    }
+
+    .hero::before {
+      width: min(620px, 88%);
+      height: min(210px, 34vw);
+      border-radius: 999px;
+      background:
+        radial-gradient(ellipse at center, rgba(173, 127, 78, 0.21), transparent 67%),
+        radial-gradient(ellipse at center, rgba(155, 63, 47, 0.08), transparent 72%);
+      filter: blur(0.2px);
+    }
+
+    .hero::after {
+      width: min(540px, 74%);
+      height: 1px;
+      bottom: clamp(8px, 1.6vw, 18px);
+      background: linear-gradient(90deg, transparent, rgba(83, 58, 40, 0.52), transparent);
+    }
+
+    .title-frame {
+      position: absolute;
+      width: min(260px, 46%);
+      height: min(260px, 46%);
+      border-radius: 999px;
+      border: 1px solid rgba(155, 63, 47, 0.18);
+      transform: rotate(-11deg);
+      opacity: 0.7;
+    }
+
+    h1 {
+      position: relative;
+      margin: 0 auto;
+      max-width: 760px;
+      color: #2b1d16;
+      font-family: var(--serif);
+      font-size: clamp(2.25rem, 5.7vw, 4.9rem);
+      line-height: 1.14;
+      font-weight: 500;
+      letter-spacing: 0.09em;
+      text-wrap: balance;
+      text-shadow: 0 1px 0 rgba(255,255,255,0.6), 0 18px 42px rgba(84, 54, 30, 0.12);
+    }
+
+    .article-body {
+      position: relative;
+      max-width: 740px;
+      margin: 0 auto;
+    }
+
+    .body-copy {
+      position: relative;
+      margin: 0;
+      color: var(--ink);
+      font-size: clamp(1.08rem, 1.35vw, 1.21rem);
+      line-height: 2.18;
+      letter-spacing: 0.045em;
+      text-align: justify;
+      text-justify: inter-ideograph;
+      word-break: break-word;
+      hanging-punctuation: first allow-end;
+    }
+
+    .body-copy::selection,
+    h1::selection { background: rgba(155, 63, 47, 0.18); }
+
+    .body-copy + .body-copy { margin-top: 1.38em; }
+
+    .body-copy:first-of-type {
+      font-size: clamp(1.12rem, 1.55vw, 1.28rem);
+      line-height: 2.14;
+    }
+
+    .body-copy:first-of-type::first-letter {
+      float: left;
+      margin: 0.1em 0.18em 0 0;
+      color: var(--seal);
+      font-size: 3.35em;
+      line-height: 0.86;
+      font-weight: 500;
+    }
+
+    .body-copy + .image-plate,
+    .image-plate + .body-copy {
+      margin-top: clamp(30px, 6vw, 66px);
+    }
+
+    .image-plate {
+      position: relative;
+      width: min(100%, 790px);
+      margin-left: auto;
+      margin-right: auto;
+      padding: clamp(9px, 1.7vw, 16px);
+      border-radius: clamp(22px, 3.6vw, 34px);
+      background:
+        linear-gradient(145deg, rgba(255,255,255,0.78), rgba(237,221,198,0.82));
+      border: 1px solid rgba(106, 75, 50, 0.20);
+      box-shadow: var(--soft-shadow);
+    }
+
+    .image-plate::before {
+      content: "";
+      position: absolute;
+      inset: clamp(9px, 1.7vw, 16px);
+      border-radius: clamp(15px, 2.4vw, 23px);
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,0.54), inset 0 -60px 90px rgba(38, 28, 20, 0.06);
+      pointer-events: none;
+      z-index: 2;
+    }
+
+    .image-plate::after {
+      content: "";
+      position: absolute;
+      left: 12%;
+      right: 12%;
+      bottom: -18px;
+      height: 34px;
+      border-radius: 50%;
+      background: rgba(61, 39, 23, 0.14);
+      filter: blur(16px);
+      z-index: -1;
+    }
+
+    .image-plate img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: clamp(15px, 2.4vw, 23px);
+      object-fit: cover;
+      filter: saturate(0.95) contrast(1.04) sepia(0.035);
+    }
+
+    @supports (font-variant-east-asian: proportional-width) {
+      .body-copy { font-variant-east-asian: proportional-width; }
+    }
+
+    @media (min-width: 980px) {
+      .article-body::before {
+        content: "";
+        position: absolute;
+        left: -44px;
+        top: 0.4em;
+        bottom: 0.4em;
+        width: 1px;
+        background: linear-gradient(transparent, rgba(123, 86, 57, 0.25) 6%, rgba(123, 86, 57, 0.25) 94%, transparent);
+      }
+    }
+
+    @media (max-width: 720px) {
+      .page {
+        width: min(100% - 18px, 1180px);
+        padding: 9px 0;
+      }
+
+      .article-shell {
+        padding: 30px 18px 42px;
+        border-radius: 24px;
+      }
+
+      .article-shell::before {
+        inset: 10px;
+        border-radius: 18px;
+      }
+
+      .hero {
+        min-height: 150px;
+        margin-bottom: 24px;
+      }
+
+      h1 {
+        letter-spacing: 0.052em;
+      }
+
+      .body-copy,
+      .body-copy:first-of-type {
+        line-height: 2.02;
+        letter-spacing: 0.025em;
+        text-align: left;
+      }
+
+      .body-copy:first-of-type::first-letter {
+        float: none;
+        margin: 0;
+        color: inherit;
+        font-size: inherit;
+        line-height: inherit;
+      }
+
+      .image-plate {
+        width: calc(100% + 2px);
+        transform: translateX(-1px);
+      }
+    }
+
+    @media (min-width: 721px) and (max-width: 1024px) {
+      .page { width: min(100% - 48px, 1180px); }
+      .article-shell { padding-left: clamp(46px, 7vw, 78px); padding-right: clamp(46px, 7vw, 78px); }
+    }
+
+    @media (prefers-reduced-motion: no-preference) {
+      .article-shell { animation: reveal 680ms ease-out both; }
+      @keyframes reveal {
+        from { opacity: 0; transform: translateY(12px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+    }
+
+    @media print {
+      html, body { background: #fff; }
+      body::before, body::after, .hero::before, .title-frame { display: none; }
+      .page { width: 100%; padding: 0; }
+      .article-shell { box-shadow: none; border: none; border-radius: 0; padding: 0; }
+      .article-shell::before, .article-shell::after { display: none; }
+      .body-copy { color: #000; }
+      .image-plate { box-shadow: none; break-inside: avoid; }
+    }
+
+  </style>
 </head>
-
-<body lang=ZH-CN style='word-wrap:break-word;text-justify-trim:punctuation'>
-
-<div class=WordSection1 style='layout-grid:15.6pt'>
-
-<p class=MsoTitle>一封写给故土与血脉的侨批</p>
-
-<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
-
-<p class=MsoNormal>当熟悉的潮音响起，当银幕上浮现出工夫茶升腾的氤氲水汽，当橄榄菜的咸香仿佛穿透光影扑面而来时，作为一个潮汕人，心底最深处那根关于“根”的弦，被轻轻拨动了。这不仅仅是一部电影，更像是一次集体的寻根，一次对祖辈记忆的深情回望。导演蓝鸿春用他一贯的真诚与细腻，将镜头对准了那些被时光尘封的“侨批”，也对准了我们血脉里流淌的坚韧与情义。</p>
-
-<p class=MsoNormal>
-
-<table cellpadding=0 cellspacing=0 align=left>
- <tr>
-  <td width=8 height=0></td>
- </tr>
- <tr>
-  <td></td>
-  <td><img width=554 height=286 src="一封写给故土与血脉的侨批.files/image001.jpg"></td>
- </tr>
-</table>
-
-<br clear=ALL>
-</p>
-
-<p class=MsoNormal>最让我感动的，首先是刻在潮汕人骨子里的精神图腾——那种在海外异乡，同胞之间不分彼此、守望相助的团结与温情。电影里，南枝到银信局想寄木生讣告时，潮汕人相互帮助的一幕，朴实无华，却有着直击人心的力量。这不仅是潮汕人的特质，更是所有华人漂泊在外时，那份“胶己人”的宝贵情谊。它告诉我们，无论走多远，那份源自故土的认同与扶持，是支撑我们走过艰难岁月的最温暖的光。</p>
-
-<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
-
-<p class=MsoNormal>其次，是两位伟大的潮汕女性所展现出来的自立自强与高风亮节的拼搏精神。影片没有将她们塑造成苦情戏里等待救赎的怨妇，而是赋予了她们真实的血肉与灵魂。故乡的阿嬷，在阿公过番失联后，独自一人扛起家庭重担，将平凡的日子过得有条不紊，她的温柔里藏着不动声色的倔强。而远在南洋的南枝，更是用一生的坚守，诠释了何为“情义”二字。她们如同大地上最坚韧的植物，在风雨中默默生长，用柔弱的肩膀撑起了家族的希望与传承。</p>
-
-<p class=MsoNormal>
-
-<table cellpadding=0 cellspacing=0 align=left>
- <tr>
-  <td width=8 height=0></td>
- </tr>
- <tr>
-  <td></td>
-  <td><img width=554 height=738 src="一封写给故土与血脉的侨批.files/image002.jpg"></td>
- </tr>
-</table>
-
-<br clear=ALL>
-</p>
-
-<p class=MsoNormal>再然后，是那段相隔万里、跨越生死的伟大爱情。它没有轰轰烈烈的誓言，却在“平安当大赚”的谎话里，在数十年如一日的书信中，在寄回的腊肉与自行车等细节里，写尽了最深沉的爱恋与牵挂。当阿嬷得知真相，没有歇斯底里，只是轻轻抚着信纸说：“我等的不是钱，是一句我回来了。”那一刻，所有的眼泪都找到了决堤的出口。这份爱，超越了简单的男女之情，升华为一种对承诺的坚守，对故土的眷恋，以及对生命本身的尊重。</p>
-
-<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
-
-<p class=MsoNormal>剧情方面就不多说了，优秀到让我不想透露一丝一毫，请你务必到影院欣赏原汁原味的绝美剧情。每一个反转，每一次情感的递进，都恰到好处，笑中带泪，后劲十足。</p>
-
-<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
-
-<p class=MsoNormal>其实，作为潮汕人和广财的学子，我有着双倍的感触。首先是扎根于生活，而高于生活的艺术创作永远是能最打动人心的。当你用潮汕人的语境打开镜头，那些藏在祖辈话语里的心酸与亲密就会更加势如破竹地闯进胸膛。看到广财的潮汕学姐作为主演出演了这么优秀的电影，也是十分自豪，倍感荣幸。她饰演的南枝，仿佛就是从我们身边的长辈故事中走出来的，那份真实感，让人信服，也让人动容。</p>
-
-<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
-
-<p class=MsoNormal>这封《给阿嬷的情书》，写给的不只是电影里的阿嬷，更是写给每一位在岁月长河中默默坚守的潮汕先辈，写给我们共同的乡愁与情义。它让我们懂得，最动人的情感，从来都藏在平凡的日子里，藏在一封家书、一顿饭菜、一句叮嘱里。愿我们都能读懂这份温柔与坚韧，珍惜身边的亲情，铭记自己的根与来路。</p>
-
-</div>
-
+<body>
+  <main class="page">
+    <article class="article-shell">
+      <header class="hero">
+        <div class="title-frame" aria-hidden="true"></div>
+        <h1>一封写给故土与血脉的侨批</h1>
+      </header>
+      <section class="article-body">
+        <p class="body-copy">当熟悉的潮音响起，当银幕上浮现出工夫茶升腾的氤氲水汽，当橄榄菜的咸香仿佛穿透光影扑面而来时，作为一个潮汕人，心底最深处那根关于“根”的弦，被轻轻拨动了。这不仅仅是一部电影，更像是一次集体的寻根，一次对祖辈记忆的深情回望。导演蓝鸿春用他一贯的真诚与细腻，将镜头对准了那些被时光尘封的“侨批”，也对准了我们血脉里流淌的坚韧与情义。</p>
+        <figure class="image-plate"><img src="一封写给故土与血脉的侨批.files/image001.jpg" width="554" height="286"></figure>
+        <p class="body-copy">最让我感动的，首先是刻在潮汕人骨子里的精神图腾——那种在海外异乡，同胞之间不分彼此、守望相助的团结与温情。电影里，南枝到银信局想寄木生讣告时，潮汕人相互帮助的一幕，朴实无华，却有着直击人心的力量。这不仅是潮汕人的特质，更是所有华人漂泊在外时，那份“胶己人”的宝贵情谊。它告诉我们，无论走多远，那份源自故土的认同与扶持，是支撑我们走过艰难岁月的最温暖的光。</p>
+        <p class="body-copy">其次，是两位伟大的潮汕女性所展现出来的自立自强与高风亮节的拼搏精神。影片没有将她们塑造成苦情戏里等待救赎的怨妇，而是赋予了她们真实的血肉与灵魂。故乡的阿嬷，在阿公过番失联后，独自一人扛起家庭重担，将平凡的日子过得有条不紊，她的温柔里藏着不动声色的倔强。而远在南洋的南枝，更是用一生的坚守，诠释了何为“情义”二字。她们如同大地上最坚韧的植物，在风雨中默默生长，用柔弱的肩膀撑起了家族的希望与传承。</p>
+        <figure class="image-plate"><img src="一封写给故土与血脉的侨批.files/image002.jpg" width="554" height="738"></figure>
+        <p class="body-copy">再然后，是那段相隔万里、跨越生死的伟大爱情。它没有轰轰烈烈的誓言，却在“平安当大赚”的谎话里，在数十年如一日的书信中，在寄回的腊肉与自行车等细节里，写尽了最深沉的爱恋与牵挂。当阿嬷得知真相，没有歇斯底里，只是轻轻抚着信纸说：“我等的不是钱，是一句我回来了。”那一刻，所有的眼泪都找到了决堤的出口。这份爱，超越了简单的男女之情，升华为一种对承诺的坚守，对故土的眷恋，以及对生命本身的尊重。</p>
+        <p class="body-copy">剧情方面就不多说了，优秀到让我不想透露一丝一毫，请你务必到影院欣赏原汁原味的绝美剧情。每一个反转，每一次情感的递进，都恰到好处，笑中带泪，后劲十足。</p>
+        <p class="body-copy">其实，作为潮汕人和广财的学子，我有着双倍的感触。首先是扎根于生活，而高于生活的艺术创作永远是能最打动人心的。当你用潮汕人的语境打开镜头，那些藏在祖辈话语里的心酸与亲密就会更加势如破竹地闯进胸膛。看到广财的潮汕学姐作为主演出演了这么优秀的电影，也是十分自豪，倍感荣幸。她饰演的南枝，仿佛就是从我们身边的长辈故事中走出来的，那份真实感，让人信服，也让人动容。</p>
+        <p class="body-copy">这封《给阿嬷的情书》，写给的不只是电影里的阿嬷，更是写给每一位在岁月长河中默默坚守的潮汕先辈，写给我们共同的乡愁与情义。它让我们懂得，最动人的情感，从来都藏在平凡的日子里，藏在一封家书、一顿饭菜、一句叮嘱里。愿我们都能读懂这份温柔与坚韧，珍惜身边的亲情，铭记自己的根与来路。</p>
+      </section>
+    </article>
+  </main>
 </body>
-
 </html>
